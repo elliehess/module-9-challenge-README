@@ -102,8 +102,9 @@ ${badge}
 
 ## Questions 
 
-Any questions? Feel free to check out my work here:
-[Click here for my profile](${github})
+Any questions? 
+Feel free to check out my work here:
+[Click here for my profile](${github})${github}
 
 Or you can reach out to me at my email address below:
 ${email}

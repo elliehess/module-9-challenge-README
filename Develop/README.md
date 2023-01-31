@@ -1,27 +1,29 @@
-# TEST
+# test
 
 ## Description
 
-what how why
+what how
 
 ## Table of Contents 
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Credits](#credits)
+- [Contributing](#contributing)
+- [Tests](#tests)
 - [License](#license)
+- [Questions](#questions)
 
 ## Installation
 
-N/A
+nada
 
 ## Usage
 
-read itt
+lots
 
-## Credits
+## Contributing
 
-nah
+yep
 
 ## Tests 
 
@@ -29,14 +31,17 @@ nope
 
 ## License
 
-MIT License
+
 
 ## Badges
 
-yep
+no
 
 ## Questions 
-Any questions? Feel free to check out my work here:
-<a>@elliehess</a>
+
+Any questions? 
+Feel free to check out my work here:
+[Click here for my profile](@elliehess)@elliehess
+
 Or you can reach out to me at my email address below:
 elhess03@gmail.com
