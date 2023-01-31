@@ -1,10 +1,10 @@
 //Packages needed for this application
 const inquirer = require('inquirer');
-const fs = require('fs');
+const { writeFile } = require('fs').promises;
 
 // Array of questions for user input
-inquirer
-  .prompt([
+const promptUser = () => {
+    return inquirer.prompt([
     {
       type: 'input',
       name: 'name',
@@ -45,13 +45,18 @@ inquirer
         type: 'input',
         name: 'email',
         message: 'Enter your email address',
-      },
-  ])
-// TODO: Create a function to write README file
-function writeFile(fileName, data) {}
+        },
+    ]);
+};
 
-// TODO: Create a function to initialize app
-function init() {}
+// Function to initialize app
+const init = () => {
+    promptUser()
+    //Function to write README file
+      .then((answers) => writeFile('README.md', generateREADME(answers)))
+      .then(() => console.log('Successfully wrote to README.md'))
+      .catch((err) => console.error(err));
+  };
 
 // Function call to initialize app
 init();
