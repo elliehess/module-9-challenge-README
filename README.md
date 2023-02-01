@@ -6,7 +6,9 @@ This is a README generator so any developer can quickly create a professional RE
 
 ## Visuals
 
-[Click here for Video](https://drive.google.com/file/d/1H7hTiPDO33WLS0Pb5mi7ldssg6Ajq0fF/view)
+<img width="1015" alt="Screen Shot 2023-01-31 at 7 39 12 PM" src="https://user-images.githubusercontent.com/118075347/215939580-073d9221-15ca-43e3-9359-60a28f68671b.png">
+
+[Click here for Walkthrough Video](https://drive.google.com/file/d/1H7hTiPDO33WLS0Pb5mi7ldssg6Ajq0fF/view)
 
 ## Installation
 
