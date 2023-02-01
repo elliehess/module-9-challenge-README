@@ -36,16 +36,11 @@ const promptUser = () => {
         message: 'If you have written any tests for your project, list examples of how to run them'
       },
     {
-      type: 'checkbox',
+      type: 'list',
       name: 'license',
       message: 'Which license did you use?',
       choices: ['MIT License','Boost Software License 1.0', 'Apache License 2.0', 'GNU General Public License v2.0', 'Other' ]
     },
-    {
-        type: 'input',
-        name: 'badge',
-        message: 'Choose your badge',
-      },
       {
         type: 'input',
         name: 'github',
@@ -59,13 +54,40 @@ const promptUser = () => {
     ]);
 };
 
-const generateREADME = ({ name, description, installation, usage, contribute, test, license, badge, github, email }) =>
+//Placeholder for README file that will be generated with user input 
+const generateREADME = ({ name, description, installation, usage, contribute, test, license, github, email }) => {
 
-`# ${name}
+
+let badge = "";
+//use the switch function to switch between the badges depending on what license the user chooses 
+switch (license) {
+    case 'MIT License':
+      badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+      ;
+      break;
+    case 'Boost Software License 1.0':
+      badge = '[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)'
+      ;
+      break;
+    case 'Apache License 2.0':
+      badge = '[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+      ;
+      break;
+    case 'GNU General Public License v2.0':
+        badge = '[![License: GPL v2](https://img.shields.io/badge/License-GPL_v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)'
+        ;
+        break;
+    default:
+      console.log("oops");
+}
+
+return `# ${name}
+${badge}
 
 ## Description
 
 ${description}
+
 
 ## Table of Contents 
 
@@ -104,11 +126,11 @@ ${badge}
 
 Any questions? 
 Feel free to check out my work here:
-[Click here for my profile](${github})${github}
+[${github}](${github})
 
 Or you can reach out to me at my email address below:
 ${email}
-`;
+`;}
 // Function to initialize app
 const init = () => {
     promptUser()
@@ -120,3 +142,5 @@ const init = () => {
 
 // Function call to initialize app
 init();
+
+

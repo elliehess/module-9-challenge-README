@@ -1,8 +1,10 @@
-# test
+# My README Generator!
+[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
 
 ## Description
 
-what how
+This is a README generator that creates a professional looking README file for any developer that may be in need of one for their project
+
 
 ## Table of Contents 
 
@@ -15,33 +17,33 @@ what how
 
 ## Installation
 
-nada
+You will need to invoke the application by running the node index.js command on the command line in your terminal
 
 ## Usage
 
-lots
+Users are able to quickly create a professional README file with this application. They simply need to answer a series of prompts
 
 ## Contributing
 
-yep
+Users are welcome to contribute to this project on Github
 
 ## Tests 
 
-nope
+N/A
 
 ## License
 
-
+Boost Software License 1.0
 
 ## Badges
 
-no
+[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)
 
 ## Questions 
 
 Any questions? 
 Feel free to check out my work here:
-[Click here for my profile](@elliehess)@elliehess
+[@elliehess](@elliehess)
 
 Or you can reach out to me at my email address below:
 elhess03@gmail.com
